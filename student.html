@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Welcome to the Library Dashboard</h1>
+    
+    <!-- Search Books -->
+    <input type="text" id="search-bar" placeholder="Search for books..." onkeyup="filterBooks()">
+    
+    <!-- Available Books List -->
+    <div>
+      <h2>Available Books</h2>
+      <ul id="available-books-list">
+        <!-- Books will be dynamically added here -->
+      </ul>
+    </div>
+
+    <!-- Borrowed Books List -->
+    <div>
+      <h2>Your Borrowed Books</h2>
+      <p>Books Borrowed: <span id="borrowed-count">0</span></p>
+      <ul id="borrowed-books-list">
+        <!-- Borrowed books will be dynamically added here -->
+      </ul>
+    </div>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
